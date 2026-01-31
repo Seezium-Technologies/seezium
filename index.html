@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEEZIUM // DIGITAL AGENCY</title>
+    <title>SEEZIUM // Premium Digital Agency</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -18,23 +17,14 @@
             theme: {
                 extend: {
                     colors: {
-                        'pixel-main': '#4F46E5', // Indigo
-                        'pixel-accent': '#39FF14', // Neon Green
-                        'pixel-dark': '#0F172A',
-                        'pixel-light': '#F8FAFC',
+                        'agency-gold': '#D4AF37',
+                        'agency-dark': '#0A0A0A',
+                        'agency-surface': '#161616',
+                        'agency-accent': '#3b82f6',
                     },
                     fontFamily: {
-                        'mono': ['"Space Mono"', 'monospace'],
-                        'block': ['"Archivo Black"', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        'hard-sm': '2px 2px 0px 0px rgba(0,0,0,1)',
-                        'hard-md': '4px 4px 0px 0px rgba(0,0,0,1)',
-                        'hard-lg': '6px 6px 0px 0px rgba(0,0,0,1)',
-                        'hard-xl': '8px 8px 0px 0px rgba(0,0,0,1)',
-                    },
-                    borderWidth: {
-                        '3': '3px',
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
                     }
                 }
             }
@@ -42,356 +32,241 @@
     </script>
     <style>
         body {
-            background-color: #F8FAFC;
-            background-image: radial-gradient(#0F172A 1px, transparent 1px);
-            background-size: 20px 20px;
+            background-color: #0A0A0A;
+            color: #ffffff;
         }
-        /* Hide scrollbar when mobile menu is open */
-        body.menu-open {
-            overflow: hidden;
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #a1a1a1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="font-mono text-pixel-dark antialiased">
+<body class="font-sans antialiased">
 
-    <nav class="bg-white border-b-3 border-black sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="font-block text-2xl tracking-tighter uppercase flex items-center gap-2">
-                <i class="fas fa-cube text-pixel-main"></i> SEEZIUM<span class="text-pixel-main">_TECH</span>
+    <nav class="fixed w-full z-50 transition-all duration-300 glass border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-2">
+                <span class="bg-white text-black px-2 py-0.5 rounded">S</span> SEEZIUM
             </a>
             
-            <ul class="hidden md:flex space-x-6 items-center font-bold text-sm uppercase tracking-widest">
-                <li><a href="#home" class="hover:bg-pixel-accent hover:text-black px-2 py-1 transition-all">Home</a></li>
-                <li><a href="#services" class="hover:bg-pixel-accent hover:text-black px-2 py-1 transition-all">Services</a></li>
-                <li><a href="#work" class="hover:bg-pixel-accent hover:text-black px-2 py-1 transition-all">Work</a></li>
-                <li><a href="#about" class="hover:bg-pixel-accent hover:text-black px-2 py-1 transition-all">Agency</a></li>
-                
+            <ul class="hidden md:flex space-x-8 items-center font-medium text-sm uppercase tracking-widest">
+                <li><a href="#home" class="hover:text-agency-accent transition-colors">Home</a></li>
+                <li><a href="#services" class="hover:text-agency-accent transition-colors">Services</a></li>
+                <li><a href="#work" class="hover:text-agency-accent transition-colors">Work</a></li>
+                <li><a href="#about" class="hover:text-agency-accent transition-colors">Agency</a></li>
                 <li>
-                    <a href="https://wa.me/917234078068" target="_blank" class="bg-green-500 text-white border-2 border-black px-4 py-2 hover:bg-white hover:text-green-600 hover:shadow-hard-sm transition-all active:shadow-none active:translate-x-[2px] active:translate-y-[2px] flex items-center gap-2">
-                        <i class="fab fa-whatsapp"></i> Chat
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+917234078068" class="bg-pixel-main text-white border-2 border-black px-4 py-2 hover:bg-white hover:text-pixel-main hover:shadow-hard-sm transition-all active:shadow-none active:translate-x-[2px] active:translate-y-[2px] flex items-center gap-2">
-                        <i class="fas fa-phone"></i> Call
+                    <a href="https://wa.me/917234078068" class="bg-white text-black px-5 py-2.5 rounded-full text-xs font-bold hover:bg-agency-accent hover:text-white transition-all">
+                        LET'S TALK
                     </a>
                 </li>
             </ul>
-
-             <button id="mobile-menu-btn" class="md:hidden border-2 border-black p-2 bg-pixel-accent shadow-hard-sm active:shadow-none transition-transform active:translate-y-1">
-                <i class="fas fa-bars text-xl"></i>
-             </button>
         </div>
     </nav>
 
-    <div id="mobile-overlay" class="fixed inset-0 bg-black/80 z-[60] hidden backdrop-blur-sm transition-opacity"></div>
-    
-    <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-white border-l-3 border-black z-[70] transform translate-x-full transition-transform duration-300 ease-in-out shadow-hard-xl flex flex-col">
+    <header id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-agency-accent/10 blur-[120px] rounded-full -z-10"></div>
         
-        <div class="flex justify-between items-center p-4 border-b-3 border-black bg-pixel-light">
-            <span class="font-block uppercase text-xl">MENU_</span>
-            <button id="close-menu-btn" class="border-2 border-black bg-red-500 text-white w-8 h-8 flex items-center justify-center font-bold hover:bg-white hover:text-red-500 shadow-hard-sm">
-                X
-            </button>
-        </div>
-
-        <div class="flex-1 overflow-y-auto p-6 flex flex-col gap-6 font-bold text-lg uppercase tracking-wider">
-            <a href="#home" class="mobile-link hover:text-pixel-main hover:translate-x-2 transition-transform">> Home</a>
-            <a href="#services" class="mobile-link hover:text-pixel-main hover:translate-x-2 transition-transform">> Services</a>
-            <a href="#work" class="mobile-link hover:text-pixel-main hover:translate-x-2 transition-transform">> Recent Work</a>
-            <a href="#about" class="mobile-link hover:text-pixel-main hover:translate-x-2 transition-transform">> Agency Profile</a>
-            
-            <div class="h-1 bg-black w-full opacity-10 my-2"></div>
-
-            <a href="https://wa.me/917234078068" class="flex items-center gap-3 text-green-600">
-                <i class="fab fa-whatsapp text-2xl"></i> WhatsApp Us
-            </a>
-            <a href="tel:+917234078068" class="flex items-center gap-3 text-pixel-main">
-                <i class="fas fa-phone-alt text-2xl"></i> Call Now
-            </a>
-        </div>
-
-        <div class="p-4 bg-black text-white text-xs text-center border-t-3 border-black">
-            Seezium Tech &copy; 2025
-        </div>
-    </div>
-
-
-    <header id="home" class="min-h-[80vh] flex items-center py-20 border-b-3 border-black bg-white relative overflow-hidden">
-        <div class="absolute top-10 right-10 w-40 h-40 bg-pixel-main border-3 border-black shadow-hard-lg -z-10 rotate-12"></div>
-        <div class="absolute bottom-20 left-10 w-24 h-24 bg-pixel-accent border-3 border-black shadow-hard-md -z-10 -rotate-12 rounded-full"></div>
-
-        <div class="container mx-auto px-4 z-10">
-           <p class="bg-black text-white inline-block px-4 py-1 mb-6 font-bold text-xs tracking-widest shadow-hard-sm uppercase">
-               <i class="fas fa-terminal mr-2"></i> Deploying Digital Excellence
-           </p>
-            <h1 class="font-block text-5xl md:text-8xl uppercase leading-none mb-6">
-                WE CODE.<br>
-                WE <span class="text-white bg-pixel-main px-2 shadow-hard-md inline-block transform -skew-x-6">RANK.</span><br>
-                WE GROW.
-            </h1>
-            <p class="text-lg md:text-xl mb-10 max-w-xl font-bold border-l-4 border-pixel-accent pl-4 bg-white">
-                Seezium is a full-stack digital agency. We turn clicks into customers and code into capital.
-            </p>
-            
-            <div class="flex flex-col md:flex-row gap-4">
-                <a href="#services" class="text-center bg-black text-white border-3 border-black px-8 py-4 text-lg font-bold hover:bg-pixel-accent hover:text-black shadow-hard-md hover:shadow-hard-lg transition-all active:shadow-none active:translate-x-[4px] active:translate-y-[4px]">
-                    OUR SERVICES_>
-                </a>
-                <a href="https://wa.me/917234078068" target="_blank" class="text-center bg-green-500 text-white border-3 border-black px-8 py-4 text-lg font-bold hover:bg-white hover:text-green-600 shadow-hard-md hover:shadow-hard-lg transition-all active:shadow-none active:translate-x-[4px] active:translate-y-[4px]">
-                   <i class="fab fa-whatsapp"></i> WHATSAPP US
-                </a>
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl">
+                <span class="inline-block py-1 px-3 rounded-full border border-white/20 text-xs font-bold tracking-widest mb-6 text-white/60">
+                    ESTABLISHED 2025 // LUCKNOW
+                </span>
+                <h1 class="font-serif text-6xl md:text-8xl mb-8 leading-[1.1]">
+                    Crafting <span class="italic text-gradient">Digital</span> <br>
+                    Legacies.
+                </h1>
+                <p class="text-lg md:text-xl text-white/60 mb-10 max-w-2xl leading-relaxed">
+                    We partner with ambitious brands to build high-performance digital products. 
+                    From elite web development to aggressive market positioning.
+                </p>
+                
+                <div class="flex flex-wrap gap-5">
+                    <a href="#work" class="bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">
+                        VIEW PROJECTS
+                    </a>
+                    <a href="tel:+917234078068" class="border border-white/20 px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-all">
+                        CONSULTATION
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="services" class="py-20 px-4 bg-pixel-light border-b-3 border-black">
-        <div class="container mx-auto">
-            <div class="mb-16">
-                <h2 class="font-block text-5xl uppercase inline-block bg-pixel-accent border-3 border-black px-4 shadow-hard-md">CORE MODULES</h2>
+    <section id="services" class="py-32 bg-agency-surface">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="font-serif text-4xl md:text-5xl mb-6">Expertise</h2>
+                    <p class="text-white/50 italic text-lg">"Quality is not an act, it is a habit."</p>
+                </div>
+                <div class="text-agency-accent font-bold tracking-widest text-sm">01 / SERVICES</div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white border-3 border-black shadow-hard-md hover:shadow-hard-xl hover:-translate-y-2 transition-all duration-200 group">
-                    <div class="h-48 bg-cover bg-center border-b-3 border-black relative grayscale group-hover:grayscale-0 transition-all" style="background-image: url('https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=500&q=60');">
-                         <div class="absolute top-4 left-4 bg-black text-white px-2 py-1 text-xs font-bold border-2 border-white">DEV_OPS</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-white/10 border border-white/10">
+                <div class="bg-agency-surface p-12 hover:bg-agency-dark transition-colors group">
+                    <div class="w-12 h-12 mb-8 flex items-center justify-center border border-white/20 group-hover:border-agency-accent transition-colors">
+                        <i class="fas fa-code text-white/40 group-hover:text-agency-accent"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="font-block text-2xl mb-2 uppercase">Web Development</h3>
-                        <p class="text-sm mb-4 font-bold">> HTML5, React, Python. Fast, secure, and responsive websites.</p>
-                        <a href="#contact" class="text-pixel-main font-bold hover:underline">Start Project -></a>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Web Architecture</h3>
+                    <p class="text-white/50 leading-relaxed mb-6">Next-gen web applications built with React, Python, and scalable cloud infrastructure.</p>
                 </div>
 
-                <div class="bg-white border-3 border-black shadow-hard-md hover:shadow-hard-xl hover:-translate-y-2 transition-all duration-200 group relative">
-                    <div class="absolute -top-4 -right-4 bg-pixel-accent border-3 border-black px-3 py-1 font-block text-sm z-10 shadow-hard-sm">HIGH ROI</div>
-                    <div class="h-48 bg-cover bg-center border-b-3 border-black relative grayscale group-hover:grayscale-0 transition-all" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=60');">
-                         <div class="absolute top-4 left-4 bg-black text-white px-2 py-1 text-xs font-bold border-2 border-white">GROWTH</div>
+                <div class="bg-agency-surface p-12 hover:bg-agency-dark transition-colors group">
+                    <div class="w-12 h-12 mb-8 flex items-center justify-center border border-white/20 group-hover:border-agency-accent transition-colors">
+                        <i class="fas fa-chart-line text-white/40 group-hover:text-agency-accent"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="font-block text-2xl mb-2 uppercase">Digital Marketing</h3>
-                        <p class="text-sm mb-4 font-bold">> SEO, Google Ads, & Analytics. We put your brand on the map.</p>
-                        <a href="#contact" class="text-pixel-main font-bold hover:underline">Get Traffic -></a>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Growth Strategy</h3>
+                    <p class="text-white/50 leading-relaxed mb-6">Data-driven SEO and performance marketing to dominate Lucknow's digital landscape.</p>
                 </div>
 
-                <div class="bg-white border-3 border-black shadow-hard-md hover:shadow-hard-xl hover:-translate-y-2 transition-all duration-200 group">
-                    <div class="h-48 bg-cover bg-center border-b-3 border-black relative grayscale group-hover:grayscale-0 transition-all" style="background-image: url('https://images.unsplash.com/photo-1559854036-2409f22a918a?auto=format&fit=crop&w=500&q=60');">
-                         <div class="absolute top-4 left-4 bg-black text-white px-2 py-1 text-xs font-bold border-2 border-white">CREATIVE</div>
+                <div class="bg-agency-surface p-12 hover:bg-agency-dark transition-colors group">
+                    <div class="w-12 h-12 mb-8 flex items-center justify-center border border-white/20 group-hover:border-agency-accent transition-colors">
+                        <i class="fas fa-fingerprint text-white/40 group-hover:text-agency-accent"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="font-block text-2xl mb-2 uppercase">Branding & Social</h3>
-                        <p class="text-sm mb-4 font-bold">> Logo Design, Social Media Mgmt, & Visual Identity.</p>
-                        <a href="#contact" class="text-pixel-main font-bold hover:underline">Build Brand -></a>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Identity Design</h3>
+                    <p class="text-white/50 leading-relaxed mb-6">Crafting high-end visual identities that resonate with premium audiences.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-pixel-main text-white border-b-3 border-black relative overflow-hidden">
-        <div class="absolute -right-10 top-10 text-9xl text-black opacity-10 font-block rotate-12 select-none pointer-events-none">???</div>
-        
-        <div class="container mx-auto px-4 text-center relative z-10">
-            <div class="inline-block bg-black text-pixel-accent px-6 py-2 mb-8 border-2 border-white font-bold shadow-hard-sm transform -rotate-2 text-sm uppercase tracking-widest">
-                <i class="fas fa-exclamation-triangle mr-2"></i> Critical Market Insight
-            </div>
-            
-            <h2 class="font-block text-4xl md:text-6xl mb-10 leading-tight">
-                WHY DOES YOUR BUSINESS<br>
-                NEED A <span class="bg-white text-black px-3 border-2 border-black shadow-hard-md transform skew-x-[-10deg] inline-block">DIGITAL HEARTBEAT?</span>
-            </h2>
-            
-            <div class="max-w-4xl mx-auto bg-white text-black border-3 border-black p-8 md:p-10 shadow-hard-xl text-left relative">
-                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-pixel-accent border-3 border-black rounded-full"></div>
-
-                <p class="font-mono text-lg md:text-xl leading-relaxed">
-                    <span class="font-bold bg-pixel-accent px-1 border border-black">FACT:</span> Your customers are scrolling right now. 
-                    <br><br>
-                    In Lucknow's rapidly evolving market, a shop sign is no longer enough. If you aren't on Google Maps, Instagram, or the Web, 
-                    <span class="underline decoration-wavy decoration-red-500 font-bold">you are invisible</span> to 60% of your potential revenue.
-                    <br><br>
-                    <i class="fas fa-angle-right text-pixel-main font-bold"></i> We don't just write code. We build the infrastructure that keeps your business relevant while you sleep.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="work" class="py-20 px-4 bg-white border-b-3 border-black">
-        <div class="container mx-auto">
-            <div class="mb-16 flex flex-col items-center text-center">
-                <p class="font-bold text-pixel-main uppercase mb-2">> Trusted By</p>
-                <h2 class="font-block text-4xl md:text-5xl uppercase inline-block bg-white border-3 border-black px-6 py-2 shadow-hard-md">
-                    RECENT DEPLOYMENTS
-                </h2>
+    <section id="work" class="py-32">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="font-serif text-4xl md:text-5xl mb-4">Recent Deployments</h2>
+                <div class="w-20 h-1 bg-agency-accent mx-auto"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="bg-pixel-light border-3 border-black p-4 shadow-hard-md hover:shadow-hard-lg transition-all">
-                     <div class="h-48 bg-gray-300 border-3 border-black mb-4 flex items-center justify-center text-gray-500 font-bold relative overflow-hidden group">
-                        <span class="z-10"><img src="images/kopykitaab.png" alt="KopyKitaab"></span>
-                    </div>
-                    <h3 class="font-block text-2xl mb-1">KOPYKITAAB</h3>
-                    <p class="text-xs font-bold text-gray-500 mb-4 uppercase">EdTech / Startup</p>
-                    <a href="#" class="block w-full text-center bg-black text-white py-2 font-bold hover:bg-pixel-accent hover:text-black border-2 border-black transition-colors shadow-hard-sm active:shadow-none active:translate-x-[2px] active:translate-y-[2px]">
-                        VISIT SITE <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
-                </div>
-
-                <div class="bg-pixel-light border-3 border-black p-4 shadow-hard-md hover:shadow-hard-lg transition-all">
-                     <div class="h-48 bg-gray-300 border-3 border-black mb-4 flex items-center justify-center text-gray-500 font-bold relative overflow-hidden group">
-                        <span class="z-10"><img src="images/hotel-leaf.png" alt="Hotel Leaf"></span>
-                    </div>
-                    <h3 class="font-block text-2xl mb-1">HOTEL LEAF</h3>
-                    <p class="text-xs font-bold text-gray-500 mb-4 uppercase">Hospitality / Web Dev</p>
-                    <a href="#" class="block w-full text-center bg-black text-white py-2 font-bold hover:bg-pixel-accent hover:text-black border-2 border-black transition-colors shadow-hard-sm active:shadow-none active:translate-x-[2px] active:translate-y-[2px]">
-                        VISIT SITE <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
-                </div>
-
-                <div class="bg-pixel-light border-3 border-black p-4 shadow-hard-md hover:shadow-hard-lg transition-all">
-                    <div class="h-48 bg-gray-300 border-3 border-black mb-4 flex items-center justify-center text-gray-500 font-bold relative overflow-hidden group">
-                        <span class="z-10"><img src="images/saral-foundation.png" alt="Saral Foundation"></span>
-                    </div>
-                    <h3 class="font-block text-2xl mb-1">SARAL FOUNDATION</h3>
-                    <p class="text-xs font-bold text-gray-500 mb-4 uppercase">NGO / Web Dev</p>
-                    <a href="#" class="block w-full text-center bg-black text-white py-2 font-bold hover:bg-pixel-accent hover:text-black border-2 border-black transition-colors shadow-hard-sm active:shadow-none active:translate-x-[2px] active:translate-y-[2px]">
-                        VISIT SITE <i class="fas fa-external-link-alt ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-20 px-4 bg-pixel-dark text-white border-b-3 border-black">
-        <div class="container mx-auto max-w-6xl">
-            <div class="flex flex-col md:flex-row gap-10 items-center">
-                <div class="md:w-1/2">
-                    <h2 class="font-block text-4xl text-pixel-accent mb-6 uppercase">//// WHY_SEEZIUM?</h2>
-                    <p class="text-lg leading-relaxed mb-6 font-mono">
-                        > We don't just build websites; we build engines for business growth. 
-                        Based in <span class="text-pixel-accent">Lucknow</span>, our team of developers and strategists work around the clock to ensure your digital presence is bug-free and optimized for sales.
-                    </p>
-                    <ul class="space-y-4 font-bold">
-                        <li class="flex items-center gap-3"><i class="fas fa-check-square text-pixel-accent"></i> Pixel Perfect Designs</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check-square text-pixel-accent"></i> SEO Optimized Code</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check-square text-pixel-accent"></i> 24/7 Support Channel</li>
-                    </ul>
-                </div>
-                <div class="md:w-1/2 w-full">
-                    <div class="bg-black border-3 border-white p-4 shadow-hard-lg font-mono text-sm">
-                        <div class="flex gap-2 mb-4 border-b border-gray-700 pb-2">
-                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video overflow-hidden rounded-lg mb-6 bg-agency-surface">
+                        <div class="absolute inset-0 bg-agency-accent/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
+                            <span class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm">VIEW CASE</span>
                         </div>
-                        <p class="text-green-400">$ init seezium_agency</p>
-                        <p class="text-white">Loading modules...</p>
-                        <p class="text-white">Clients... [SARAL_FOUNDATION, LEAF, KOPYKITAAB]</p>
-                        <p class="text-blue-400 mt-2">>> READY TO SCALE.</p>
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">KOPYKITAAB</h3>
+                    <p class="text-white/40 text-sm tracking-widest uppercase">EdTech Architecture</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video overflow-hidden rounded-lg mb-6 bg-agency-surface">
+                        <div class="absolute inset-0 bg-agency-accent/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
+                            <span class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm">VIEW CASE</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">HOTEL LEAF</h3>
+                    <p class="text-white/40 text-sm tracking-widest uppercase">Hospitality Experience</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-video overflow-hidden rounded-lg mb-6 bg-agency-surface">
+                        <div class="absolute inset-0 bg-agency-accent/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
+                            <span class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm">VIEW CASE</span>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">SARAL FOUNDATION</h3>
+                    <p class="text-white/40 text-sm tracking-widest uppercase">Social Impact Platform</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-agency-dark">
+        <div class="container mx-auto px-6">
+            <div class="glass p-10 md:p-20 rounded-3xl border border-white/10 flex flex-col md:flex-row gap-16 items-center">
+                <div class="flex-1">
+                    <h2 class="font-serif text-5xl mb-8 leading-tight">Ready to start your <span class="italic text-agency-accent">Ascension?</span></h2>
+                    <p class="text-white/60 text-lg mb-10">We are currently accepting new high-impact projects for 2026.</p>
+                    
+                    <div class="space-y-6">
+                        <a href="tel:+917234078068" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-agency-accent transition-colors">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <span class="text-xl font-medium">+91 72340 78068</span>
+                        </a>
+                        <a href="https://wa.me/917234078068" class="flex items-center gap-4 group">
+                            <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-green-500 transition-colors">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <span class="text-xl font-medium">Chat with a Strategist</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact" class="py-20 px-4 bg-white">
-        <div class="container mx-auto max-w-4xl border-3 border-black bg-pixel-light shadow-hard-xl p-8 md:p-12 relative">
-            <div class="absolute -top-6 -left-6 bg-pixel-main text-white border-3 border-black px-4 py-2 font-block shadow-hard-sm rotate-6">
-                START NOW
-            </div>
-
-            <h2 class="font-block text-4xl text-center mb-2 uppercase">Connect With Seezium</h2>
-            <p class="text-center font-bold text-gray-600 mb-10">> Let's discuss your next project.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-                <a href="tel:+917234078068" class="flex flex-col items-center justify-center bg-white border-3 border-black p-6 hover:bg-gray-100 cursor-pointer shadow-hard-sm hover:shadow-hard-md transition-all group">
-                    <i class="fas fa-phone-alt text-4xl mb-4 text-pixel-main group-hover:scale-110 transition-transform"></i>
-                    <h3 class="font-block text-xl">CALL US</h3>
-                    <p class="font-bold">+91 72340 78068</p>
-                </a>
-                <a href="https://wa.me/917234078068" target="_blank" class="flex flex-col items-center justify-center bg-white border-3 border-black p-6 hover:bg-green-50 cursor-pointer shadow-hard-sm hover:shadow-hard-md transition-all group">
-                    <i class="fab fa-whatsapp text-4xl mb-4 text-green-500 group-hover:scale-110 transition-transform"></i>
-                    <h3 class="font-block text-xl">WHATSAPP</h3>
-                    <p class="font-bold">Chat Instantly</p>
-                </a>
-            </div>
-
-            <form id="leadForm" class="space-y-4 border-t-3 border-black pt-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="NAME_" class="w-full px-4 py-3 border-3 border-black focus:outline-none focus:bg-pixel-accent font-bold" required>
-                    <input type="tel" placeholder="PHONE NUMBER_" class="w-full px-4 py-3 border-3 border-black focus:outline-none focus:bg-pixel-accent font-bold" required>
+                <div class="w-full md:w-[400px]">
+                    <form id="leadForm" class="space-y-4">
+                        <input type="text" placeholder="Full Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-agency-accent transition-colors" required>
+                        <input type="tel" placeholder="Mobile Number" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-agency-accent transition-colors" required>
+                        <select class="w-full bg-agency-surface border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-agency-accent transition-colors">
+                            <option>Web Development</option>
+                            <option>Digital Marketing</option>
+                            <option>Full Agency Retainer</option>
+                        </select>
+                        <button type="submit" class="w-full bg-agency-accent text-white rounded-xl py-5 font-bold hover:brightness-110 transition-all shadow-lg shadow-agency-accent/20">
+                            INITIALIZE ENQUIRY
+                        </button>
+                    </form>
                 </div>
-                <select class="w-full px-4 py-3 border-3 border-black focus:outline-none focus:bg-pixel-accent font-bold bg-white">
-                    <option>Service Required: Web Development</option>
-                    <option>Service Required: Digital Marketing / SEO</option>
-                    <option>Service Required: Branding</option>
-                    <option>Service Required: Other</option>
-                </select>
-                <button type="submit" class="w-full bg-black text-white border-3 border-black font-block text-xl py-4 hover:bg-pixel-main hover:text-white shadow-hard-md hover:shadow-hard-lg active:shadow-none active:translate-x-[4px] active:translate-y-[4px] transition-all uppercase">
-                    SEND REQUEST
-                </button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-black text-white py-8 text-center text-sm font-bold border-t-3 border-pixel-main">
-        <p>/// &copy; 2025 SEEZIUM TECH. Lucknow, UP. ///</p>
-        
-        <!-- <div class="mt-4 space-x-4 text-xs text-gray-400">
-            <a href="#" class="hover:text-pixel-accent underline decoration-1">Terms & Conditions</a>
-            <span>|</span>
-            <a href="#" class="hover:text-pixel-accent underline decoration-1">Privacy Policy</a>
-        </div> -->
+    <!-- <footer class="py-12 border-t border-white/5">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <p class="text-white/30 text-sm">© 2026 SEEZIUM TECH. Lucknow, UP. All Rights Reserved.</p>
+            <div class="flex gap-8">
+                <a href="#" class="text-white/30 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white/30 hover:text-white transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white/30 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer> -->
 
-        <div class="flex justify-center gap-4 mt-4 text-xl">
-            <a href="#" class="hover:text-pixel-accent"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="hover:text-pixel-accent"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="hover:text-pixel-accent"><i class="fab fa-twitter"></i></a>
+    <footer class="py-12 border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-4 mb-8 text-xs uppercase tracking-[0.2em] font-bold text-white/40">
+                <a href="/terms" class="hover:text-agency-accent transition-colors">Terms of Service</a>
+                <a href="/privacy" class="hover:text-agency-accent transition-colors">Privacy Policy</a>
+                <a href="/refunds" class="hover:text-agency-accent transition-colors">Refund Policy</a>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-white/30 text-sm">© 2026 SEEZIUM TECHNOLOGIES. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" class="text-white/30 hover:text-white transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white/30 hover:text-white transition-colors" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white/30 hover:text-white transition-colors" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Form Handling
-        document.getElementById('leadForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert(`> REQUEST RECEIVED. SEEZIUM TEAM WILL CONTACT YOU AT +91 72340 78068.`);
-            this.reset();
+        // Smooth scroll adjustment for fixed header
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
         });
 
-        // Mobile Menu Logic
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const closeBtn = document.getElementById('close-menu-btn');
-        const drawer = document.getElementById('mobile-drawer');
-        const overlay = document.getElementById('mobile-overlay');
-        const body = document.body;
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        function toggleMenu() {
-            const isClosed = drawer.classList.contains('translate-x-full');
-            
-            if (isClosed) {
-                // Open Menu
-                drawer.classList.remove('translate-x-full');
-                overlay.classList.remove('hidden');
-                body.classList.add('menu-open');
-            } else {
-                // Close Menu
-                drawer.classList.add('translate-x-full');
-                overlay.classList.add('hidden');
-                body.classList.remove('menu-open');
-            }
-        }
-
-        // Event Listeners
-        menuBtn.addEventListener('click', toggleMenu);
-        closeBtn.addEventListener('click', toggleMenu);
-        overlay.addEventListener('click', toggleMenu);
-
-        // Close menu when a link inside is clicked
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', toggleMenu);
+        // Simple Form Alert
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your request has been prioritized. Our team will reach out shortly.');
+            this.reset();
         });
     </script>
 </body>
