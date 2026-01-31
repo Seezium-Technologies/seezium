@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEEZIUM // Premium Digital Agency</title>
+    <title>Seezium Technologies</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -52,7 +57,9 @@
     <nav class="fixed w-full z-50 transition-all duration-300 glass border-b border-white/10">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-2">
-                <span class="bg-white text-black px-2 py-0.5 rounded">S</span> SEEZIUM
+                <!-- <span class="bg-white text-black px-2 py-0.5 rounded">S</span> -->
+                <img src="images/logo.png" class="h-10 w-10" alt="">
+                SEEZIUM
             </a>
             
             <ul class="hidden md:flex space-x-8 items-center font-medium text-sm uppercase tracking-widest">
@@ -78,7 +85,7 @@
                     ESTABLISHED 2025 // LUCKNOW
                 </span>
                 <h1 class="font-serif text-6xl md:text-8xl mb-8 leading-[1.1]">
-                    Crafting <span class="italic text-gradient">Digital</span> <br>
+                    Crafting <span class="italic text-gradient pr-1">Digital</span> <br>
                     Legacies.
                 </h1>
                 <p class="text-lg md:text-xl text-white/60 mb-10 max-w-2xl leading-relaxed">
@@ -149,7 +156,7 @@
                         <div class="absolute inset-0 bg-agency-accent/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
                             <span class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm">VIEW CASE</span>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
+                        <img src="images/kopykitaab.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
                     </div>
                     <h3 class="text-xl font-bold mb-1">KOPYKITAAB</h3>
                     <p class="text-white/40 text-sm tracking-widest uppercase">EdTech Architecture</p>
@@ -160,7 +167,7 @@
                         <div class="absolute inset-0 bg-agency-accent/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
                             <span class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm">VIEW CASE</span>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
+                        <img src="images/hotel-leaf.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
                     </div>
                     <h3 class="text-xl font-bold mb-1">HOTEL LEAF</h3>
                     <p class="text-white/40 text-sm tracking-widest uppercase">Hospitality Experience</p>
@@ -171,7 +178,7 @@
                         <div class="absolute inset-0 bg-agency-accent/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center z-10">
                             <span class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm">VIEW CASE</span>
                         </div>
-                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
+                        <img src="images/saral-foundation.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-60">
                     </div>
                     <h3 class="text-xl font-bold mb-1">SARAL FOUNDATION</h3>
                     <p class="text-white/40 text-sm tracking-widest uppercase">Social Impact Platform</p>
@@ -207,13 +214,14 @@
                     <form id="leadForm" class="space-y-4">
                         <input type="text" placeholder="Full Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-agency-accent transition-colors" required>
                         <input type="tel" placeholder="Mobile Number" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-agency-accent transition-colors" required>
-                        <select class="w-full bg-agency-surface border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-agency-accent transition-colors">
+                        <input type="text" placeholder="Comments (Optional)" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-agency-accent transition-colors">
+                        <!-- <select class="w-full bg-agency-surface border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-agency-accent transition-colors">
                             <option>Web Development</option>
                             <option>Digital Marketing</option>
                             <option>Full Agency Retainer</option>
-                        </select>
+                        </select> -->
                         <button type="submit" class="w-full bg-agency-accent text-white rounded-xl py-5 font-bold hover:brightness-110 transition-all shadow-lg shadow-agency-accent/20">
-                            INITIALIZE ENQUIRY
+                            SUBMIT ENQUIRY
                         </button>
                     </form>
                 </div>
@@ -235,17 +243,17 @@
     <footer class="py-12 border-t border-white/5">
         <div class="container mx-auto px-6">
             <div class="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-4 mb-8 text-xs uppercase tracking-[0.2em] font-bold text-white/40">
-                <a href="/terms" class="hover:text-agency-accent transition-colors">Terms of Service</a>
-                <a href="/privacy" class="hover:text-agency-accent transition-colors">Privacy Policy</a>
-                <a href="/refunds" class="hover:text-agency-accent transition-colors">Refund Policy</a>
+                <a href="/legal" class="hover:text-agency-accent transition-colors">Terms of Service</a>
+                <a href="/legal" class="hover:text-agency-accent transition-colors">Privacy Policy</a>
+                <a href="/legal" class="hover:text-agency-accent transition-colors">Refund Policy</a>
             </div>
 
             <div class="flex flex-col md:flex-row justify-between items-center gap-8">
                 <p class="text-white/30 text-sm">© 2026 SEEZIUM TECHNOLOGIES. All Rights Reserved.</p>
                 <div class="flex gap-8">
-                    <a href="#" class="text-white/30 hover:text-white transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white/30 hover:text-white transition-colors" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="text-white/30 hover:text-white transition-colors" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/seezium.in/" target="_blank" class="text-white/30 hover:text-white transition-colors" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/seezium-in/" target="_blank" class="text-white/30 hover:text-white transition-colors" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="text-white/30 hover:text-white transition-colors" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
