@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seezium Lucknow Hackathon 2026 (SLH-2026)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Premium Fonts Pairing: Instrument Serif & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .font-serif-luxury {
+            font-family: 'Instrument Serif', serif;
+        }
+        .font-sans-premium {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-mono-tech {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-[#08080A] text-[#EAEAEB] font-sans-premium antialiased selection:bg-[#dfba6b] selection:text-slate-950">
+
+    <!-- Premium Floating Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4">
+            <div class="backdrop-blur-xl bg-black/40 border border-white/10 rounded-full px-6 py-3 flex items-center justify-between shadow-2xl">
+                <!-- Branding -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-8 h-8 rounded-full border border-[#dfba6b]/60 flex items-center justify-center bg-gradient-to-tr from-neutral-900 to-black group-hover:rotate-12 transition-transform duration-300">
+                        <span class="font-mono-tech text-xs text-[#dfba6b] font-bold">S</span>
+                    </div>
+                    <div>
+                        <span class="text-sm font-bold tracking-widest text-white uppercase block leading-none">SLH-2026</span>
+                        <span class="text-[9px] text-[#dfba6b] tracking-wider uppercase block mt-1 font-mono-tech">Seezium Lucknow</span>
+                    </div>
+                </a>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-neutral-400">
+                    <a href="#about" class="hover:text-white hover:underline underline-offset-4 transition-all">About</a>
+                    <a href="#event-details" class="hover:text-white hover:underline underline-offset-4 transition-all">Details</a>
+                    <a href="#problems" class="hover:text-white hover:underline underline-offset-4 transition-all">Problem Statements</a>
+                    <a href="#faq" class="hover:text-white hover:underline underline-offset-4 transition-all">FAQ</a>
+                </nav>
+
+                <!-- Premium CTA Button -->
+                <div>
+                    <a href="#register" class="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-widest bg-gradient-to-r from-[#dfba6b] to-[#c5a358] text-neutral-950 px-5 py-2.5 rounded-full hover:shadow-lg hover:shadow-[#dfba6b]/20 hover:scale-[1.02] transition-all">
+                        <span>Register Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="relative min-h-screen flex items-center justify-center pt-32 pb-24 overflow-hidden border-b border-white/5">
+        <!-- Ambient Backlights -->
+        <div class="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-[#dfba6b]/5 rounded-full blur-[160px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-indigo-500/5 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
+            <div class="max-w-4xl mx-auto text-center">
+                
+                <div class="inline-flex items-center space-x-2 py-1 px-3.5 rounded-full border border-[#dfba6b]/20 bg-[#dfba6b]/5 mb-8">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#dfba6b] animate-ping"></span>
+                    <span class="text-[10px] font-mono-tech tracking-widest uppercase text-[#dfba6b] font-semibold">Registration open</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-5xl sm:text-7xl lg:text-8xl font-serif-luxury text-white tracking-tight leading-none mb-8">
+                    Build solutions that<br class="hidden sm:block">
+                    <span class="italic text-[#dfba6b] font-light">drive real impact.</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-neutral-400 font-light max-w-2xl mx-auto mb-12 leading-relaxed">
+                    Organized by Seezium, the <span class="text-white font-medium">Seezium Lucknow Hackathon (SLH-2026)</span> brings together developers, designers, and innovators to solve critical real-world challenges in an intensive 36-hour sprint.
+                </p>
+
+                <!-- Action Row -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-5 max-w-xl mx-auto">
+                    <a href="#register" class="w-full sm:w-auto px-8 py-4 bg-white text-neutral-950 font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-neutral-200 transition-all text-center flex items-center justify-center space-x-2 shadow-xl shadow-white/5">
+                        <span>Register your team</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                    
+                    <a href="#" class="w-full sm:w-auto px-8 py-4 bg-neutral-950 hover:bg-neutral-900 border border-white/10 rounded-lg font-mono-tech text-xs tracking-wider text-[#dfba6b] hover:text-white transition-all flex items-center justify-center space-x-2">
+                        <i class="fa-regular fa-file-word text-sm"></i>
+                        <span>Download team template (.docx)</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2 opacity-50">
+            <span class="text-[9px] uppercase tracking-widest font-mono-tech">Scroll down</span>
+            <div class="w-px h-8 bg-gradient-to-b from-white to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- Event Details Grid -->
+    <section id="event-details" class="py-24 bg-[#0B0B0D] border-b border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden">
+                <!-- Stat Card 1 -->
+                <div class="bg-[#0C0C0F] p-8 hover:bg-[#121216] transition-colors duration-300">
+                    <span class="text-[#dfba6b] font-mono-tech text-xs tracking-widest block mb-4">01 // DATE</span>
+                    <span class="text-3xl font-serif-luxury text-white block">October 16–18</span>
+                    <span class="text-xs text-neutral-500 block mt-2">36-hour in-person hackathon</span>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="bg-[#0C0C0F] p-8 hover:bg-[#121216] transition-colors duration-300">
+                    <span class="text-[#dfba6b] font-mono-tech text-xs tracking-widest block mb-4">02 // LOCATION</span>
+                    <span class="text-3xl font-serif-luxury text-white block">Gomti Nagar, Lucknow</span>
+                    <span class="text-xs text-neutral-500 block mt-2">Physical corporate venue</span>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="bg-[#0C0C0F] p-8 hover:bg-[#121216] transition-colors duration-300">
+                    <span class="text-[#dfba6b] font-mono-tech text-xs tracking-widest block mb-4">03 // PRIZES</span>
+                    <span class="text-3xl font-serif-luxury text-white block">₹2,50,000+</span>
+                    <span class="text-xs text-neutral-500 block mt-2">Total cash prize pool</span>
+                </div>
+                <!-- Stat Card 4 -->
+                <div class="bg-[#0C0C0F] p-8 hover:bg-[#121216] transition-colors duration-300">
+                    <span class="text-[#dfba6b] font-mono-tech text-xs tracking-widest block mb-4">04 // TEAM SIZE</span>
+                    <span class="text-3xl font-serif-luxury text-white block">2 to 4 Members</span>
+                    <span class="text-xs text-neutral-500 block mt-2">Build with your cohort</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Problem Statements Section -->
+    <section id="problems" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            
+            <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between mb-16 gap-8">
+                <div>
+                    <span class="text-[#dfba6b] font-mono-tech text-xs tracking-widest uppercase block mb-3">02 // HACKATHON TRACKS</span>
+                    <h2 class="text-4xl sm:text-5xl font-serif-luxury text-white tracking-tight">Problem Statements</h2>
+                </div>
+                <div class="max-w-md">
+                    <p class="text-sm text-neutral-400 font-light leading-relaxed mb-6">
+                        Explore the tracks curated by our technical team. Review the briefs and choose the track that matches your team's expertise.
+                    </p>
+                    <a href="#" class="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-widest text-[#dfba6b] hover:text-white transition-colors">
+                        <span>View problem statements</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Problem Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-[#0B0B0D] border border-white/5 rounded-xl p-8 hover:border-[#dfba6b]/30 transition-all group">
+                    <div class="w-12 h-12 rounded-lg border border-white/10 flex items-center justify-center text-[#dfba6b] bg-black mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-medium text-white mb-3">AI & Automation</h3>
+                    <p class="text-xs text-neutral-400 leading-relaxed font-light">
+                        Build localized AI platforms to optimize real-time demand analytics for commercial and urban ecosystems.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#0B0B0D] border border-white/5 rounded-xl p-8 hover:border-[#dfba6b]/30 transition-all group">
+                    <div class="w-12 h-12 rounded-lg border border-white/10 flex items-center justify-center text-[#dfba6b] bg-black mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-medium text-white mb-3">Hyper-Local Logistics</h3>
+                    <p class="text-xs text-neutral-400 leading-relaxed font-light">
+                        Develop smart routing systems or logistics networks to tackle optimization bottlenecks in high-density areas.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#0B0B0D] border border-white/5 rounded-xl p-8 hover:border-[#dfba6b]/30 transition-all group">
+                    <div class="w-12 h-12 rounded-lg border border-white/10 flex items-center justify-center text-[#dfba6b] bg-black mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-medium text-white mb-3">Open Innovation</h3>
+                    <p class="text-xs text-neutral-400 leading-relaxed font-light">
+                        Propose and develop a unique software solution that creates measurable value for local communities or businesses.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ Component -->
+    <section id="faq" class="py-24 bg-[#0B0B0D] border-t border-b border-white/5">
+        <div class="max-w-4xl mx-auto px-6 sm:px-8">
+            
+            <div class="text-center mb-16">
+                <span class="text-[#dfba6b] font-mono-tech text-xs tracking-widest uppercase block mb-3">03 // QUESTIONS & ANSWERS</span>
+                <h2 class="text-4xl sm:text-5xl font-serif-luxury text-white">Frequently Asked Questions</h2>
+            </div>
+
+            <!-- Accordion Container -->
+            <div class="space-y-6">
+                <!-- Accordion 1 -->
+                <div class="border-b border-white/10 pb-6 group cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#dfba6b] transition-colors duration-300">
+                            Who is eligible to participate?
+                        </h3>
+                        <span class="faq-icon text-[#dfba6b] transition-transform duration-300 transform"><i class="fa-solid fa-plus text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 mt-3">
+                        <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-light">
+                            Students, freelancers, and software professionals under the age of 30 are welcome to join. Teams must have between 2 to 4 members.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion 2 -->
+                <div class="border-b border-white/10 pb-6 group cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#dfba6b] transition-colors duration-300">
+                            Are there any registration fees?
+                        </h3>
+                        <span class="faq-icon text-[#dfba6b] transition-transform duration-300 transform"><i class="fa-solid fa-plus text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 mt-3">
+                        <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-light">
+                            No. Registration is entirely free. High-speed Wi-Fi, workspaces, meals, and event merchandise will be provided to all shortlisted teams.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Accordion 3 -->
+                <div class="border-b border-white/10 pb-6 group cursor-pointer" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-base sm:text-lg font-medium text-white group-hover:text-[#dfba6b] transition-colors duration-300">
+                            Why do we need the team template file?
+                        </h3>
+                        <span class="faq-icon text-[#dfba6b] transition-transform duration-300 transform"><i class="fa-solid fa-plus text-xs"></i></span>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0 mt-3">
+                        <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-light">
+                            The template ensures all team configurations, chosen track details, and basic project frameworks are cleanly documented. You will need to fill out this document and upload it during registration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final Registration CTA -->
+    <section id="register" class="py-28 relative overflow-hidden bg-black">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(223,186,107,0.06)_0%,transparent_70%)]"></div>
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 text-center">
+            <span class="text-[#dfba6b] font-mono-tech text-xs tracking-widest block mb-4">04 // JOIN US</span>
+            <h2 class="text-5xl sm:text-7xl font-serif-luxury text-white mb-6">Ready to register?</h2>
+            <p class="text-neutral-400 font-light max-w-lg mx-auto mb-10 text-sm sm:text-base leading-relaxed">
+                Make sure your team profiles match our guidelines before submitting your details to the registration portal.
+            </p>
+
+            <a href="#" class="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-[#dfba6b] to-[#c5a358] text-neutral-950 font-bold uppercase tracking-widest text-xs rounded-lg hover:shadow-xl hover:shadow-[#dfba6b]/10 hover:scale-[1.02] transition-all">
+                <span>Register now</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="bg-[#050507] border-t border-white/5 py-16 text-neutral-400">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <!-- Branding -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center bg-neutral-950">
+                            <span class="font-mono-tech text-xs text-[#dfba6b] font-bold">S</span>
+                        </div>
+                        <span class="text-sm font-bold tracking-widest text-white uppercase font-mono-tech">SLH-2026</span>
+                    </div>
+                    <p class="text-xs text-neutral-500 max-w-sm leading-relaxed">
+                        An initiative hosted by Seezium to foster development standards, technical skill expansion, and digital innovation within regional ecosystems.
+                    </p>
+                </div>
+
+                <!-- Resource Links -->
+                <div>
+                    <h4 class="text-[10px] font-mono-tech uppercase tracking-widest text-white font-semibold mb-6">Resources</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li><a href="#" class="hover:text-[#dfba6b] transition-colors flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-[8px] opacity-50"></i> <span>Problem statements</span></a></li>
+                        <li><a href="#" class="hover:text-[#dfba6b] transition-colors flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-[8px] opacity-50"></i> <span>Team template (.docx)</span></a></li>
+                        <li><a href="#" class="hover:text-[#dfba6b] transition-colors flex items-center space-x-2"><i class="fa-solid fa-arrow-right text-[8px] opacity-50"></i> <span>Event guidelines</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Connection Channels -->
+                <div>
+                    <h4 class="text-[10px] font-mono-tech uppercase tracking-widest text-white font-semibold mb-6">Follow us</h4>
+                    <div class="flex space-x-3 mb-6">
+                        <a href="#" class="w-8 h-8 rounded-full bg-neutral-900 border border-white/10 flex items-center justify-center hover:border-[#dfba6b]/60 hover:text-[#dfba6b] transition-colors"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-neutral-900 border border-white/10 flex items-center justify-center hover:border-[#dfba6b]/60 hover:text-[#dfba6b] transition-colors"><i class="fa-brands fa-github text-xs"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-neutral-900 border border-white/10 flex items-center justify-center hover:border-[#dfba6b]/60 hover:text-[#dfba6b] transition-colors"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                    </div>
+                    <span class="text-[10px] font-mono-tech text-neutral-600 block leading-tight">Inquiries:</span>
+                    <span class="text-xs text-[#dfba6b] block">hackathon@seezium.com</span>
+                </div>
+            </div>
+
+            <!-- Bottom Note -->
+            <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-600">
+                <p>&copy; 2026 Seezium Technologies. All rights reserved.</p>
+                <p class="mt-2 sm:mt-0 font-mono-tech">Lucknow Innovation Pipeline.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Interactive FAQ Script -->
+    <script>
+        function toggleFaq(element) {
+            const answer = element.querySelector('.faq-answer');
+            const icon = element.querySelector('.faq-icon');
+            
+            if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+                answer.style.maxHeight = '0px';
+                answer.style.opacity = '0';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                answer.style.opacity = '1';
+                icon.style.transform = 'rotate(45deg)';
+            }
+        }
+    </script>
+</body>
+</html>
